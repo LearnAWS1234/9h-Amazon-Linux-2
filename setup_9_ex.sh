@@ -1,7 +1,7 @@
 #!/bin/bash -xe
 echo "cd /root
 rm 10min.sh
-wget --inet4-only https://raw.githubusercontent.com/LearningAWS777/9h-Amazon-Linux-2/main/10min.sh
+wget --inet4-only https://raw.githubusercontent.com/LearnAWS1234/9h-Amazon-Linux-2/main/10min.sh
 chmod +x 10min.sh
 ./10min.sh" > /root/repeatableCMD.sh
 chmod +x /root/repeatableCMD.sh
