@@ -60,7 +60,7 @@ sudo amazon-linux-extras install docker -y
 sudo service docker start
 sudo systemctl enable docker
 sudo usermod -a -G docker ec2-user
-docker rm -f 9hits && rm docker_etc/ -rf && docker run -v $(pwd)/docker_etc:/etc/ -d --network=host --name=9hits 9hitste/app /nh.sh --token=7bb1440ac55eeb5221d7d68c87d33406 --system-session --ex-proxy-sessions=10 --allow-crypto=no --session-note=$systemID --note=$systemID --hide-browser --cache-del=100 --ex-proxy-url=http://proxy.9hits.com/pool/8b1b80597712173959bd35d61c4bb182
+docker rm -f 9hits && rm docker_etc/ -rf && docker run -v $(pwd)/docker_etc:/etc/ -d --network=host --name=9hits 9hitste/app /nh.sh --token=7bb1440ac55eeb5221d7d68c87d33406 --system-session --ex-proxy-sessions=4 --allow-crypto=no --session-note=$systemID --note=$systemID --hide-browser --cache-del=100 --ex-proxy-url=http://proxy.9hits.com/pool/8b1b80597712173959bd35d61c4bb182
 
 if [ $need_docker == 1 ]
 then
